@@ -1,4 +1,5 @@
 import React from 'react';
+import DailyWeather from './Weather/DailyWeather';
 import HourlyWeather from './Weather/HourlyWeather';
 import WeatherCurrent from './Weather/WeatherCurrent';
 
@@ -9,6 +10,7 @@ const Card = () => {
             <h1 className='text-3xl text-center p-7 border-b w-full'>Application météo</h1>
             <WeatherCurrent />
             <HourlyWeather />
+            <DailyWeather />
         </div>
     );
 };
