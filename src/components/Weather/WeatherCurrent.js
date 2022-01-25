@@ -23,7 +23,8 @@ const WeatherCurrent = ({ currentData, data, city }) => {
 
     return (
         <div className='m-10 grid grid-cols-2'>
-            {weatherIcon()}
+            {/* {weatherIcon()} */}
+            <img src={`./ressources/jour/${currentData.icon}.svg`} className='w-56 self-center justify-self-center' alt="logo du temps qu'il fait" />
             {/* <BsSun className='text-9xl text-amber-400 self-center justify-self-center' /> */}
             {/* <BsCloudFog2Fill className='text-9xl text-gray-500 self-center justify-self-center' /> */}
             {/* <BsCloudyFill className='text-9xl text-gray-500 self-center justify-self-center' /> */}

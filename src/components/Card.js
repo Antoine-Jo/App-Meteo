@@ -16,7 +16,7 @@ const Card = () => {
 
 
         axios
-        .get(`https://api.openweathermap.org/data/2.5/weather?q=cannes,fr&units=metric&appid=${CLEFAPI}&lang=fr`)
+        .get(`https://api.openweathermap.org/data/2.5/weather?q=nice,fr&units=metric&appid=${CLEFAPI}&lang=fr`)
         .then((res) => {
             setCurrentData(res.data.weather[0])
             setData(res.data.main)
