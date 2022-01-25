@@ -7,7 +7,7 @@ const Form = () => {
     const [currentData, setCurrentData] = useState([]);
     const [data, setData] = useState('');
     const [city, setCity] = useState("");
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState('');
 
     useEffect(() => {
         const CLEFAPI = '8e9391f167c17b3253b145b2a036ffd4'

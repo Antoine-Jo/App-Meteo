@@ -20,7 +20,7 @@ const Localisation = () => {
             setCurrentData(res.data.list[0].weather[0])
             setData(res.data.list[0].main)
             setCity(res.data.list[0])
-            console.log(res.data.list[0].weather[0]);
+            console.log(res.data.list[0]);
         })
     }
 
