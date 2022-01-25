@@ -9,8 +9,8 @@ const Header = () => {
                 <NavLink to='/'>
                     <li className='border p-3 rounded-lg cursor-pointer hover:bg-sky-700'>Home</li>
                 </NavLink>
-                <NavLink to='/favoris'>
-                    <li className='border p-3 rounded-lg cursor-pointer hover:bg-sky-700'>Favoris</li>
+                <NavLink to='/localisation'>
+                    <li className='border p-3 rounded-lg cursor-pointer hover:bg-sky-700'>GéoLocalisation</li>
                 </NavLink>    
                     
             </ul>

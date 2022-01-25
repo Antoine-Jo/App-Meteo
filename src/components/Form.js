@@ -34,7 +34,7 @@ const Form = () => {
             setCurrentData(res.data.weather[0])
             setData(res.data.main)
             setCity(res.data)
-            // console.log(res.data);
+            console.log(res.data);
         })
     }
 
