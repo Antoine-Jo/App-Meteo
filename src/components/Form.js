@@ -19,7 +19,7 @@ const Form = () => {
             setCurrentData(res.data.weather[0])
             setData(res.data.main)
             setCity(res.data)
-            console.log(res.data);
+            // console.log(res.data);
         })
     }, [])
 
@@ -34,7 +34,7 @@ const Form = () => {
             setCurrentData(res.data.weather[0])
             setData(res.data.main)
             setCity(res.data)
-            console.log(res.data);
+            // console.log(res.data);
         })
     }
 
@@ -44,7 +44,7 @@ const Form = () => {
         <div className="flex flex-col justify-center items-center mt-8">
             <form>
                 <input type="text" onChange={e => setSearch(e.target.value)} placeholder="Entrez le nom d'une ville" id='search-input' className='p-1' />
-                <input type='button' onClick={handleSearch} value="Rechercher" className='text-white cursor-pointer border ml-2 p-1 hover:scale-110' />
+                <button onClick={handleSearch} value="Rechercher" className='text-white cursor-pointer border ml-2 p-1 hover:scale-110'>Rechercher</button>
             </form>
 
             <div className='flex flex-col m-auto mt-10 w-6/12 text-white border'>
