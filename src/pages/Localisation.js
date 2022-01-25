@@ -10,18 +10,29 @@ const Localisation = () => {
     const [data, setData] = useState('');
     const [city, setCity] = useState('');
 
+
     const handleWeather = (e) => {
         e.preventDefault();
+        // if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+        
+                // console.log(position);
+                let long = position.coords.longitude;
+                let lat = position.coords.latitude;
+                // console.log(long, lat);
+            
+        // }
         setModal(true)
         const CLEFAPI = '8e9391f167c17b3253b145b2a036ffd4'
         axios
-        .get(`https://api.openweathermap.org/data/2.5/find?lat=43.5504&lon=7.0131&cnt=5&units=metric&appid=${CLEFAPI}&lang=FR`)
+        .get(`https://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${long}&cnt=5&units=metric&appid=${CLEFAPI}&lang=FR`)
         .then((res) => {
             setCurrentData(res.data.list[0].weather[0])
             setData(res.data.list[0].main)
             setCity(res.data.list[0])
-            console.log(res.data.list[0]);
+            // console.log(res.data.list[0]);
         })
+    })
     }
 
     return (
